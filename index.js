@@ -5,6 +5,7 @@ const cookieSession = require("cookie-session")
 const passport = require("passport")
 const passportStart = require("./config/Passport")
 const session = require("express-session")
+const tester = require("./middleware/tester")
 
 ConnectionDb()
 
@@ -22,6 +23,8 @@ app.use(express.json({ extended: false }))
 
 app.use(passport.initialize())
 app.use(passport.session())
+
+// app.use("/tester", tester)  => simple middleware when u hit tester endpoint middleware calls doesn't matter get or post request
 
 app.use("/api/register", require("./routes/api/users"))
 app.use("/api/login", require("./routes/api/login"))

@@ -13,10 +13,13 @@ module.exports = passport => {
         console.log("email", email)
         console.log("password", password)
         const user = await User2.findOne({ email: email })
+
         if (!user) {
           done(null, false, { message: "email id not registered" })
+          console.log("not regis")
         } else {
           done(null, user)
+          console.log("regis")
           console.log(user)
         }
       }

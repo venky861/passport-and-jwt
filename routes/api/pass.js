@@ -63,7 +63,7 @@ router.post("/register", (req, res) => {
 //login
 
 router.post("/login", passport.authenticate("local"), (req, res) => {
-  console.log("passport", req.user)
+  res.send(req.user)
 })
 
 router.get("/logout", (req, res) => {
