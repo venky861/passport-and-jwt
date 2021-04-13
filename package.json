@@ -7,13 +7,13 @@
     "bcryptjs": "^2.4.3",
     "cookie-session": "^1.4.0",
     "express": "^4.17.1",
-    "express-session": "^1.17.0",
-    "express-validator": "^6.4.0",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.10.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.2",
+    "mongoose": "^5.12.3",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "typescript": "^3.8.2"
+    "typescript": "^3.9.9"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
